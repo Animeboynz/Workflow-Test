@@ -3,6 +3,9 @@ name: Generate Schemas
 on:
   workflow_dispatch:
 
+permissions:
+  contents: write  # Request write permissions for the workflow
+
 jobs:
   generate-schemas:
     runs-on: ubuntu-latest
